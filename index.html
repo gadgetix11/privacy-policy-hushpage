@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Hushpage</title>
+    <style>
+        :root {
+            --primary: #1C7562;
+            --primary-light: #EAF6F2;
+            --bg: #F8FAF9;
+            --surface: #FFFFFF;
+            --text-main: #1D2321;
+            --text-muted: #596561;
+            --border: #E2E8E5;
+            --radius: 16px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 32px 16px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 44px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
+        .header {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .highlight-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin-bottom: 36px;
+            font-size: 1rem;
+            color: #124B3F;
+        }
+        .highlight-box h2 {
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+            color: var(--primary);
+        }
+        section { margin-bottom: 30px; }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            letter-spacing: -0.2px;
+        }
+        p { color: var(--text-muted); margin-bottom: 12px; font-size: 1rem; }
+        ul { list-style-type: none; padding-left: 0; margin-bottom: 12px; }
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        strong { color: var(--text-main); }
+        a { color: var(--primary); text-decoration: underline; }
+        .footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        @media (max-width: 600px) {
+            body { padding: 16px 10px; }
+            .container { padding: 24px 18px; }
+            .header h1 { font-size: 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Privacy Policy for Hushpage</h1>
+        <div class="meta-info">
+            <div><strong>Developer:</strong> Gadgetix</div>
+            <div><strong>Last Updated:</strong> October 2026</div>
+            <div><strong>Contact:</strong> <a href="mailto:ranuprakash2000@gmail.com">ranuprakash2000@gmail.com</a></div>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <h2>The Short Version</h2>
+        Your memories, photos, and voice notes stay completely on your device. Hushpage requires no account, displays no ads, and contains no tracking. Only two minimal network-dependent features exist, both of which are optional: app update checks and voluntary feedback.
+    </div>
+
+    <section>
+        <h2>1. What Stays on Your Device (Local Storage)</h2>
+        <p>Everything you create in Hushpage is stored locally on your device:</p>
+        <ul>
+            <li>Personal diary entries, titles, and reflections</li>
+            <li>Mood tracking records and emotional tags</li>
+            <li>Attached photos and audio voice notes</li>
+            <li>Your app PIN and Secret Vault contents</li>
+            <li>Custom notebooks, reading preferences, and visual color themes</li>
+            <li>Unsaved drafts and recently deleted items (permanently purged after 30 days)</li>
+        </ul>
+        <p>Hushpage does not operate servers to store or inspect your personal diary entries. We have no access to your private thoughts or media.</p>
+    </section>
+
+    <section>
+        <h2>2. Application Permissions</h2>
+        <ul>
+            <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Used only while you actively record a voice note.</li>
+            <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Used strictly to deliver your optional daily writing reminder.</li>
+            <li><strong>Photo Selection:</strong> Hushpage utilizes the native Android Photo Picker. We never request broad storage access and cannot view your photo library.</li>
+            <li><strong>Biometric Unlock (<code>USE_BIOMETRIC</code>):</strong> Evaluated entirely on-device by Android OS. We never receive or store biometric data.</li>
+            <li><strong>Internet (<code>INTERNET</code>):</strong> Used solely for optional update checks and voluntary feedback.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Optional Network Communications</h2>
+        <ul>
+            <li><strong>Update Checks:</strong> Periodically, the app queries Google's Firebase Remote Config service to check for newer app versions. Firebase receives a randomized device identifier and server connection metadata (IP address) to fulfill the request. No diary data or personal details are transmitted.</li>
+            <li><strong>Feedback Submission:</strong> If you voluntarily send feedback via the in-app screen, we receive your message and feedback type (bug report or feature request). You may optionally include device details (manufacturer, model, and Android OS version) to aid troubleshooting.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Security &amp; Secret Vault</h2>
+        <p>Your app lock PIN is securely hashed and stored locally. Vault entries and associated media are protected using strong <strong>AES-256</strong> on-device encryption with your secret vault PIN and recovery key. We cannot access, decrypt, or recover vault entries if you lose both your PIN and recovery key.</p>
+    </section>
+
+    <section>
+        <h2>5. Backups and Exports</h2>
+        <p>Encrypted backups (Hushpage Pro) are created locally and secured with a passphrase chosen by you. The encrypted file is saved to the storage location you choose through Android's system document picker (such as Google Drive or local storage). Hushpage does not automatically upload backups to remote servers.</p>
+    </section>
+
+    <section>
+        <h2>6. In-App Purchases and Subscriptions</h2>
+        <p>Subscriptions and one-time purchases for Hushpage Pro are processed securely through <strong>Google Play Billing</strong>. Hushpage never sees, collects, or stores your payment card details. We only receive verification of active entitlement status from Google Play.</p>
+    </section>
+
+    <section>
+        <h2>7. Data Retention and Deletion</h2>
+        <p>Because your data is stored locally on your device:</p>
+        <ul>
+            <li>Deleting an entry or notebook within the app permanently erases it.</li>
+            <li>Uninstalling Hushpage completely removes all local database records and files from your device.</li>
+            <li>Because we do not maintain accounts or server-side backups, there is no remote data to delete.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>8. Mental Health &amp; Medical Disclaimer</h2>
+        <p>Hushpage is a personal digital journal and mood tracker intended solely for self-reflection and personal organization. It is not a medical device and does not provide medical or mental health advice, diagnosis, or clinical treatment. If you are experiencing distress or a mental health crisis, please consult a qualified healthcare professional.</p>
+    </section>
+
+    <section>
+        <h2>9. Children’s Privacy</h2>
+        <p>Hushpage is not directed to individuals under the age of 13. We do not knowingly collect personal data from children.</p>
+    </section>
+
+    <section>
+        <h2>10. Contact Information</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please contact:</p>
+        <p><strong>Developer:</strong> Gadgetix<br>
+        <strong>Email:</strong> <a href="mailto:ranuprakash2000@gmail.com">ranuprakash2000@gmail.com</a><br>
+        <strong>In-App:</strong> Settings &gt; Send feedback</p>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 Hushpage &bull; Developed by Gadgetix &bull; All Rights Reserved.
+    </div>
+</div>
+
+</body>
+  </html>
